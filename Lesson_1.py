@@ -1,3 +1,5 @@
 
-print("Hello Otus!")
-print("Hello Otus!")
+for _ in range(3):
+    print("Hello Otus!")
+
+
