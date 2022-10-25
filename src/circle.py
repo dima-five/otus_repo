@@ -14,9 +14,6 @@ class Circle(Figure):
     def area(self):
         return 2 * (self.PI * self.radius ** 2)
 
-    def add_area(self, area_other_figure):
-        return self.area + area_other_figure
-
 
 perimeter_1 = Circle(radius=3)
 perimeter_value = perimeter_1.perimeter
