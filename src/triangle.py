@@ -20,9 +20,6 @@ class TriangleFigure(Figure):
         half_perimeter = (self.a + self.b + self.c) / 2
         return sqrt(half_perimeter * (half_perimeter - self.a) * (half_perimeter - self.b) * (half_perimeter - self.c))
 
-    def add_area(self, area_other_figure):
-        return self.area + area_other_figure
-
 
 perimeter = TriangleFigure(a=5, b=3, c=7)
 perimeter_value = perimeter.perimeter
@@ -36,5 +33,5 @@ circle = Circle(radius=3)
 circle_area_value = circle.area
 assert circle_area_value
 
-sum_two_figures = triangle.add_area(circle_area_value)
+sum_two_figures = triangle.add_area(circle_area_value, circle)
 assert sum_two_figures
