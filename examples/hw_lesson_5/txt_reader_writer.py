@@ -58,6 +58,7 @@ for item in range(count_users):
 with open('example.json', 'w') as file:
     users_file = json.dumps(users_data_list, indent=2)
     file.write(users_file)
+    file.close()
 
 """___________________notes_______________________________"""
 # for item in new_users_list:
